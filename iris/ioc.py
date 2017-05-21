@@ -152,7 +152,7 @@ class Container:
         """
         Disposes every performed registration; the container can then be used again
         """
-        for registration in self._registrations.values():
+        for registration in list(self._registrations.values()):
             registration.dispose()
 
         self._registrations = {}

@@ -38,7 +38,7 @@ class ModelTests(unittest.TestCase):
 
 
     def testFindVars_ShouldContainTheVarsKey(self):
-        assert ("vars" in self._model.findVars().keys())
+        assert ("vars" in list(self._model.findVars().keys()))
 
 
     def testFindVars_ShouldReturnOnlyGetterValuesByDefault(self):

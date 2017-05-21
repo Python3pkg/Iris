@@ -55,7 +55,7 @@ class DefaultOnProcessingFunctions:
         """
         Prints out the file path, without interfering with the processing
         """
-        print("---> " + filePath)
+        print(("---> " + filePath))
         return True
 
 
